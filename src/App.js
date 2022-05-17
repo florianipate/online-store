@@ -1,3 +1,4 @@
+ import VRS_CategoryItem from './components/vrs_category-item/vrs_category_item.component';
  import './categories.styles.scss';
 
 const App = () => {
@@ -32,20 +33,9 @@ const App = () => {
   
   return (
     <div className="categories-container">
-      {categories.map(({title, id, imageUrl}) => (
-        <div className="category-container" key={id}>
-        <div className="background-image"
-        style={{
-          backgroundImage:`url(${imageUrl})`,
-        }}
-        />
-        <div className="category-body-container" >
-          <h2>{title}</h2>
-          <p>Shop Now</p>
-        </div>
-      </div>
+      {categories.map((category) => (
+        <VRS_CategoryItem  key={category.id} category = {category}/>
       ))}
-      
     </div>
   );
 }
