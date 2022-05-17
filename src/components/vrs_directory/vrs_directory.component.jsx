@@ -1,6 +1,6 @@
 import CategoryItem from '../vrs_category-item/vrs_category_item.component';
 import './vrs_directory.style.scss';
-const Directory =() =>{
+const Directory =({categories}) =>{
     return (
         <div className="directory-container">
             {categories.map((category) => (
