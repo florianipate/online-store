@@ -1,4 +1,4 @@
- import VRS_CategoryItem from './components/vrs_category-item/vrs_category_item.component';
+ import CategoryItem from './components/vrs_category-item/vrs_category_item.component.jsx';
  import './categories.styles.scss';
 
 const App = () => {
@@ -34,7 +34,7 @@ const App = () => {
   return (
     <div className="categories-container">
       {categories.map((category) => (
-        <VRS_CategoryItem  key={category.id} category = {category}/>
+        <CategoryItem  key={category.id} category = {category} />
       ))}
     </div>
   );

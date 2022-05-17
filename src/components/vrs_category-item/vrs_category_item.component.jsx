@@ -1,6 +1,6 @@
 import './vrs_category-item.style.scss';
 
-const VRS_CategoryItem = ({category}) =>{
+const CategoryItem = ({category}) =>{
     const {imageUrl, title} = category;
     return(
         <div className="category-container">
@@ -16,4 +16,4 @@ const VRS_CategoryItem = ({category}) =>{
       </div>
     )
 }
-export default VRS_CategoryItem;
+export default CategoryItem;
