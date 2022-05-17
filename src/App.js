@@ -28,7 +28,7 @@ const App = () => {
     <div className="vrs_catergories-container">
       {categories.map(({title, id}) => (
         <div className="vrs_category-container">
-        {/* <img/> */}
+        <div className="vrs_background-image"></div>
         <div className="vrs_category-body-container" key={id}>
           <h2>{title}</h2>
           <p>Shop Now</p>
