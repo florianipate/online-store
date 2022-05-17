@@ -1,5 +1,4 @@
- import CategoryItem from './components/vrs_category-item/vrs_category_item.component.jsx';
- import './categories.styles.scss';
+ import Directory from "./components/vrs_directory/vrs_directory.component";
 
 const App = () => {
   console.log('render');
@@ -32,11 +31,7 @@ const App = () => {
   ]
   
   return (
-    <div className="categories-container">
-      {categories.map((category) => (
-        <CategoryItem  key={category.id} category = {category} />
-      ))}
-    </div>
+    <Directory categories ={categories} />
   );
 }
 
